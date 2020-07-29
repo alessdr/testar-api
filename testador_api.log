@@ -1,0 +1,8 @@
+2020-07-29 12:21:01,791 INFO werkzeug  * Restarting with stat
+2020-07-29 12:21:02,785 WARNING werkzeug  * Debugger is active!
+2020-07-29 12:21:02,801 INFO werkzeug  * Debugger PIN: 193-682-569
+2020-07-29 12:21:02,820 INFO werkzeug  * Running on http://127.0.0.1:8011/ (Press CTRL+C to quit)
+2020-07-29 12:21:20,072 INFO werkzeug 127.0.0.1 - - [29/Jul/2020 12:21:20] "[37mGET / HTTP/1.1[0m" 200 -
+2020-07-29 12:21:20,135 INFO werkzeug 127.0.0.1 - - [29/Jul/2020 12:21:20] "[37mGET /static/js/axios.min.js HTTP/1.1[0m" 200 -
+2020-07-29 12:21:20,135 INFO werkzeug 127.0.0.1 - - [29/Jul/2020 12:21:20] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+2020-07-29 12:21:20,217 INFO werkzeug 127.0.0.1 - - [29/Jul/2020 12:21:20] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

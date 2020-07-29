@@ -1,0 +1,7 @@
+Construir:
+
+sudo docker build -t testador/api .
+
+Rodar:
+
+sudo docker run -d -p 8011:8011 testador/api

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/axios.min.js') }}"></script>
+
+</head>
+
+<body>
+
+    <section class="page">
+
+        <button type="button" onclick="testar()">TESTAR1</button>
+        <button type="button" onclick="testar2()">TESTAR2</button>
+
+    </section>
+
+    <script>
+
+        function testar() {
+            //Define a URL
+            var url = 'http://127.0.0.1:8000/unidade/';
+
+            $.get(url, function(result){
+                console.log(result);
+            }).fail(function(result) {
+                console.log(result);
+            }).done(function() {
+                $('#loading').hide();
+            });
+        }
+
+        function testar2() {
+            //Define a URL
+            var url = 'http://127.0.0.1:8000/unidade/';'
+
+            axios.get(url)
+            .then(function (response) {
+                console.log(response);
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+            .then(function () {
+                // always executed
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
